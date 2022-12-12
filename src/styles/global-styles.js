@@ -35,6 +35,8 @@ ul, ol {
 
 a{
   color: ${(theme) => theme.colors.secondaryColor};
+  text-decoration: none;
+  cursor: pointer;
 }
 
 `;
