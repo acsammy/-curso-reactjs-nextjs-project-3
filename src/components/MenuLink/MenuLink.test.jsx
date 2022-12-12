@@ -5,7 +5,7 @@ import { MenuLink } from '.';
 describe('<MenuLink />', () => {
   it('should render a link', () => {
     renderTheme(<MenuLink link="http://localhost">children</MenuLink>);
-    expect(screen.findbyRole('link', { name: 'children' })).toBeInTheDocument();
+    expect(screen.queryAllByText(/children/i)).toBeInTheDocument();
   });
 
   it('should open in a new tab', () => {
@@ -14,7 +14,7 @@ describe('<MenuLink />', () => {
         children
       </MenuLink>,
     );
-    expect(screen.findbyRole('link', { name: 'children' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'children' })).toHaveAttribute(
       'target',
       '_blank',
     );

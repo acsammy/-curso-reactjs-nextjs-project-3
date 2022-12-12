@@ -12,12 +12,12 @@ describe('<NavLinks />', () => {
 
   it('should not render links', () => {
     renderTheme(<NavLinks />);
-    expect(screen.queryAllByText(/link/i)).toHaveLength(0);
+    expect(screen.queryAllByText(/link/i)).not().toBeNull();
   });
 
   it('should not render links', () => {
     renderTheme(<NavLinks />);
-    expect(screen.findByText(/link 10/i).parentElement()).toHaveStyleRole(
+    expect(screen.getByText(/link 10/i)).toHaveStyleRole(
       'flex-flow',
       'column wrap',
       {
@@ -28,6 +28,6 @@ describe('<NavLinks />', () => {
 
   it('should match snapshot', () => {
     const { container } = renderTheme(<NavLinks />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(screen).toMatchSnapshot();
   });
 });

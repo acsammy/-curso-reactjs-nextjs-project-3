@@ -22,6 +22,7 @@ export const Dark = (args) => <Heading {...args} />;
 Light.parameters = {
   backgrounds: {
     default: 'light',
+    darkMode: true,
   },
 };
 

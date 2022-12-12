@@ -5,8 +5,8 @@ import { renderTheme } from '../../styles/render-theme';
 import { theme } from '../../styles/theme';
 
 describe('<Heading />', () => {
-  it('should render with default values', () => {
-    renderTheme(<Heading>texto</Heading>);
+  it('should render with the default values', () => {
+    renderTheme(<Heading darkMode={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
@@ -16,7 +16,7 @@ describe('<Heading />', () => {
     });
   });
 
-  it('should render with white color', () => {
+  it('should render with the white color', () => {
     renderTheme(<Heading colorDark={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
@@ -65,8 +65,8 @@ describe('<Heading />', () => {
   });
 
   it('should render correct font-size when using mobile', () => {
-    const { rerender } = renderTheme(<Heading size="huge">texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'texto' });
+    renderTheme(<Heading size="huge">texto</Heading>);
+    screen.getByRole('heading', { name: 'texto' });
 
     expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule(
       'font-size',
@@ -88,9 +88,14 @@ describe('<Heading />', () => {
 
   it('should render correct heading element', () => {
     const { container } = renderTheme(<Heading as="h6">texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'texto' });
+    screen.getByRole('heading', { name: 'texto' });
     const h6 = container.querySelector('h6');
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
+  });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading>Children</Heading>);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
