@@ -1,4 +1,4 @@
-import { queryByAltText, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { SectionBackground } from '.';
 
@@ -9,7 +9,7 @@ describe('<SectionBackground />', () => {
         <h1>Children</h1>
       </SectionBackground>,
     );
-    expect(screen.queryAllByText(/Children/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 
@@ -19,7 +19,7 @@ describe('<SectionBackground />', () => {
         <h1>Children</h1>
       </SectionBackground>,
     );
-    expect(screen.queryAllByText(/Children/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });
