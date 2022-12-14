@@ -1,10 +1,10 @@
-import { GotTop } from '.';
+import { GoTop } from '.';
 
 export default {
-  title: 'GotTop',
-  component: GotTop,
+  title: 'GoTop',
+  component: GoTop,
   args: {
-    children: 'GotTop',
+    children: 'GoTop',
   },
   argTypes: {
     children: { type: 'string' },
@@ -14,7 +14,56 @@ export default {
 export const Template = (args) => {
   return (
     <div style={{ height: '400vh' }}>
-      <GotTop {...args} />
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <h1>Lorem ipsum dolor sit, amet</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+        doloremque qui eum maxime magni omnis sit, aliquam soluta distinctio nam
+        dignissimos praesentium ut sunt porro incidunt molestias libero ab
+        consectetur.
+      </p>
+      <GoTop {...args} />
     </div>
   );
 };

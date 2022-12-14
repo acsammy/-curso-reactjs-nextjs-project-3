@@ -1,14 +1,14 @@
 import P from 'prop-types';
-import { Container } from './styles';
+import * as Styled from './styles';
 import { MenuLink } from '../MenuLink';
 
 export const NavLinks = ({ links = [] }) => {
   return (
-    <Container aria-label="Main menu">
+    <Styled.Container aria-label="Main menu">
       {links.map((link) => (
         <MenuLink key={link.link} {...link} />
       ))}
-    </Container>
+    </Styled.Container>
   );
 };
 
