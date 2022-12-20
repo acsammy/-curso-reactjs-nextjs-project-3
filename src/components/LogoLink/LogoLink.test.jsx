@@ -18,7 +18,7 @@ describe('<LogoLink />', () => {
     renderTheme(
       <LogoLink link="#target" text="Olá mundo" srcImg="image.jpg" />,
     );
-    expect(screen.queryAllByText(/Olá mundo/i)).toHaveAttribute(
+    expect(screen.getByAltText('Olá mundo')).toHaveAttribute(
       'src',
       'image.jpg',
     );
@@ -28,7 +28,6 @@ describe('<LogoLink />', () => {
     const { container } = renderTheme(
       <LogoLink link="#target" text="Olá mundo" srcImg="image.jpg" />,
     );
-
-    expect(screen.queryAllByText(/Olá mundo/i)).toMatchSnapshot();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

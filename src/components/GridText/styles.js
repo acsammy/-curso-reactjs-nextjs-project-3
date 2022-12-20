@@ -18,6 +18,7 @@ export const Grid = styled.div`
     gap: ${theme.spacings.large};
     overflow: hidden;
     width: 100%;
+
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
     }
@@ -30,6 +31,7 @@ export const GridElement = styled.div`
       position: relative;
       left: 5rem;
     }
+
     ${HeadingContainer}::before {
       counter-increment: grid-counter;
       content: counter(grid-counter);

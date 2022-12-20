@@ -1,25 +1,31 @@
 import P from 'prop-types';
-import { Container, Grid, GridElement, Image } from './styles';
-import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
+import { SectionBackground } from '../SectionBackground';
 import { TextComponent } from '../TextComponent';
+import * as Styled from './styles';
 
-export const GridImage = ({ title, description, grid, background = false }) => {
+export const GridImage = ({
+  title,
+  description,
+  grid,
+  background = false,
+  sectionId = '',
+}) => {
   return (
-    <SectionBackground background={background}>
-      <Container>
-        <Heading size="huge" uppercase darkMode={!background} as="h2">
+    <SectionBackground background={background} sectionId={sectionId}>
+      <Styled.Container>
+        <Heading size="huge" uppercase colorDark={!background} as="h2">
           {title}
         </Heading>
         <TextComponent>{description}</TextComponent>
-        <Grid>
+        <Styled.Grid>
           {grid.map((el) => (
-            <GridElement key={el.srcImg}>
-              <Image src={el.srcImg} alt={el.altText} />
-            </GridElement>
+            <Styled.GridElement key={`${el.srcImg}${el.altText}`}>
+              <Styled.Image src={el.srcImg} alt={el.altText} />
+            </Styled.GridElement>
           ))}
-        </Grid>
-      </Container>
+        </Styled.Grid>
+      </Styled.Container>
     </SectionBackground>
   );
 };
@@ -34,4 +40,5 @@ GridImage.propTypes = {
       srcImg: P.string.isRequired,
     }),
   ).isRequired,
+  sectionId: P.string,
 };

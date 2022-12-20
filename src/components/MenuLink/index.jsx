@@ -1,12 +1,14 @@
 import P from 'prop-types';
-import { Container } from './styles';
+import { Link } from 'react-router-dom';
+import * as Styled from './styles';
 
 export const MenuLink = ({ children, link, newTab = false }) => {
   const target = newTab ? '_blank' : '_self';
+
   return (
-    <Container href={link} target={target}>
+    <Styled.Container href={link} target={target}>
       {children}
-    </Container>
+    </Styled.Container>
   );
 };
 

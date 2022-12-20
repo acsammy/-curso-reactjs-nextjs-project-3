@@ -1,4 +1,5 @@
 import { GridContent } from '.';
+
 import mock from './mock';
 
 export default {

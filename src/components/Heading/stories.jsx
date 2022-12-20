@@ -23,10 +23,9 @@ Light.parameters = {
   backgrounds: {
     default: 'light',
   },
-  darkMode: true,
 };
 
 Dark.args = {
   children: 'O texto está claro',
-  darkMode: false,
+  colorDark: false,
 };

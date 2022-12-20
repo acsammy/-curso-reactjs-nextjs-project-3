@@ -1,5 +1,5 @@
 import P from 'prop-types';
-import { Button, Container, MenuContainer } from './styles';
+import * as Styled from './styles';
 import { SectionContainer } from '../SectionContainer';
 import { LogoLink } from '../LogoLink';
 import { NavLinks } from '../NavLinks';
@@ -12,7 +12,7 @@ export const Menu = ({ links = [], logoData }) => {
 
   return (
     <>
-      <Button
+      <Styled.Button
         visible={visible}
         onClick={() => setVisible(true)}
         aria-label="Open/Close menu"
@@ -22,15 +22,15 @@ export const Menu = ({ links = [], logoData }) => {
         ) : (
           <MenuIcon aria-label="Open menu" />
         )}
-      </Button>
-      <Container visible={visible} onClick={() => setVisible(false)}>
+      </Styled.Button>
+      <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <SectionContainer>
-          <MenuContainer>
+          <Styled.MenuContainer>
             <LogoLink {...logoData} />
             <NavLinks links={links} />
-          </MenuContainer>
+          </Styled.MenuContainer>
         </SectionContainer>
-      </Container>
+      </Styled.Container>
     </>
   );
 };

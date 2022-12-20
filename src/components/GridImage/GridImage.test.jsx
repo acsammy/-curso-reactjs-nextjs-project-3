@@ -7,15 +7,13 @@ import mock from './mock';
 describe('<GridImage />', () => {
   it('should render with background', () => {
     const { container } = renderTheme(<GridImage {...mock} />);
-    expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 
   it('should render without background', () => {
     const { container } = renderTheme(
-      <GridImage {...mock} background="undefined" />,
+      <GridImage {...mock} background={undefined} />,
     );
-    expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

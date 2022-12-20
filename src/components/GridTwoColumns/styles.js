@@ -2,31 +2,29 @@ import styled, { css } from 'styled-components';
 import { Title } from '../Heading/styles';
 
 export const Container = styled.div`
-  ${({ theme, background }) => css`
+  ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: ${theme.spacings.large};
-    padding: 0 2.5rem;
 
-    @media ${theme.media.ltMedium}{
-    grid-template-columns: 1fr;
-    text-align: center;
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+      text-align: center;
     }
 
-    ${Title}{
-    margim-bottom: ${theme.spacings.xlarge};
-    color: ${background ? theme.colors.white : theme.colors.primaryColor}
+    ${Title} {
+      margin-bottom: ${theme.spacings.xlarge};
     }
   `}
 `;
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
-
-  @media ${theme.media.ltMedium}{
-    margim-bottom: ${theme.spacings.large};
-  }`}
+    @media ${theme.media.lteMedium} {
+      margin-bottom: ${theme.spacings.large};
+    }
+  `}
 `;
 
 export const ImageContainer = styled.div`
@@ -34,5 +32,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    width: 100%;
+  `}
 `;
