@@ -1,9 +1,8 @@
-import * as Styled from './styles';
+import { Base } from '../Base';
+import mock from '../Base/mock';
 
-export default function Home() {
-  return (
-    <Styled.Wrapper>
-      <h1>Oi</h1>;
-    </Styled.Wrapper>
-  );
+function Home() {
+  return <Base {...mock} />;
 }
+
+export default Home;
