@@ -3,7 +3,7 @@ export const theme = {
     primaryColor: '#0A1128',
     secondaryColor: '#dc143c',
     white: '#FFFFFF',
-    mediumGray: '#ccc',
+    mediumGray: '#DDDDDD',
   },
   font: {
     family: {
@@ -11,7 +11,7 @@ export const theme = {
       secondary: "'Montserrat', sans-serif",
     },
     sizes: {
-      xsmall: '0.8rem',
+      xsmall: '8rem',
       small: '1.6rem',
       medium: '2.4rem',
       large: '3.2rem',
@@ -22,7 +22,7 @@ export const theme = {
     },
   },
   media: {
-    ltMedium: '(max-width: 768px)',
+    lteMedium: '(max-width: 768px)',
   },
   spacings: {
     xsmall: '8rem',
