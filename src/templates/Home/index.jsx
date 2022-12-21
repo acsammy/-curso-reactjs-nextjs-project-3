@@ -1,7 +1,45 @@
+import { useEffect, useRef, useState } from 'react';
 import { Base } from '../Base';
 import mockBase from '../Base/mock';
+import { mapData } from '../../api/map-data';
+import { PageNotFound } from '../PageNotFound';
 
 function Home() {
+  const [data, setData] = useState([]);
+  const isMounted = useRef(true);
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const data = await fetch(
+          'http://localhosta:1337/api/pages/?filters[slug]=olha-so-a-minha-pagina',
+        );
+        const json = await data.json();
+        const { attributes } = json.data[0];
+        const pageData = mapData([attributes]);
+        setData(() => pageData[0]);
+      } catch (error) {
+        setData(undefined);
+      }
+    };
+
+    if (isMounted.current === true) {
+      load();
+    }
+
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
+  if (data === undefined) {
+    return <PageNotFound />;
+  }
+
+  if (data && !data.slug) {
+    return <h1>Carregando...</h1>;
+  }
+
   return <Base {...mockBase} />;
 }
 
