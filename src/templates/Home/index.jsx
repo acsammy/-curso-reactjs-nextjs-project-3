@@ -11,16 +11,17 @@ function Home() {
 
   useEffect(() => {
     const load = async () => {
+      console.log('fetching');
       try {
         const data = await fetch(
-          'http://localhost:1337/api/pages/?filters[slug]=olha-so-a-minha-pagina',
+          'http://localhost:1337/api/pages/?filters[slug]=landing-page&populate[menu][populate]=*&populate[sections][populate]=*',
         );
         const json = await data.json();
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
         setData(() => pageData[0]);
       } catch (error) {
-        setData(undefined);
+        setData([]);
       }
     };
 
@@ -41,7 +42,23 @@ function Home() {
     return <Loading />;
   }
 
-  return <Base {...mockBase} />;
+  const { menu, sections, footerHtml } = data;
+  const { links, link, text, srcImg } = menu;
+
+  console.log(menu);
+
+  return (
+    <Base
+      footerHtml={footerHtml}
+      links={links}
+      logoData={{ text, link, srcImg }}
+    >
+      <h1>Ola mundo</h1>
+      <h1>Ola mundo</h1>
+      <h1>Ola mundo</h1>
+      <h1>Ola mundo</h1>
+    </Base>
+  );
 }
 
 export default Home;
