@@ -1,0 +1,352 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Olha só a minha página",
+        "slug": "olha-so-a-minha-pagina",
+        "createdAt": "2022-12-06T16:46:59.653Z",
+        "updatedAt": "2022-12-06T17:17:54.790Z",
+        "publishedAt": "2022-12-06T16:53:58.461Z",
+        "footer_text": "Feito por ** _Samuel Carvalho _**",
+        "menu": {
+          "id": 1,
+          "logo_link": "#home",
+          "logo_text": "company-logo",
+          "logo": {
+            "data": {
+              "id": 9,
+              "attributes": {
+                "name": "company.png",
+                "alternativeText": null,
+                "caption": null,
+                "width": 400,
+                "height": 400,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".png",
+                    "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670346915/thumbnail_company_0c1368cb03.png",
+                    "hash": "thumbnail_company_0c1368cb03",
+                    "mime": "image/png",
+                    "name": "thumbnail_company.png",
+                    "path": null,
+                    "size": 6.91,
+                    "width": 156,
+                    "height": 156,
+                    "provider_metadata": {
+                      "public_id": "thumbnail_company_0c1368cb03",
+                      "resource_type": "image"
+                    }
+                  }
+                },
+                "hash": "company_0c1368cb03",
+                "ext": ".png",
+                "mime": "image/png",
+                "size": 4.9,
+                "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670346915/company_0c1368cb03.png",
+                "previewUrl": null,
+                "provider": "cloudinary",
+                "provider_metadata": {
+                  "public_id": "company_0c1368cb03",
+                  "resource_type": "image"
+                },
+                "createdAt": "2022-12-06T17:15:16.168Z",
+                "updatedAt": "2022-12-06T17:15:16.168Z"
+              }
+            }
+          },
+          "menu_links": [
+            {
+              "id": 2,
+              "link_text": "intro",
+              "url": "#intro",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 1,
+              "link_text": "grid-one",
+              "url": "#grid-one",
+              "open_in_new_tab": false
+            }
+          ]
+        },
+        "sections": [
+          {
+            "id": 1,
+            "__component": "section.section-two-columns",
+            "title": "Estratégias em um Novo Paradigma Globalizado",
+            "description": "Assim mesmo, a expansão dos mercados mundiais estende o alcance e a importância do impacto na agilidade decisória.",
+            "image": {
+              "data": {
+                "id": 2,
+                "attributes": {
+                  "name": "eye.jpg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 300,
+                  "height": 168,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpg",
+                      "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670345146/thumbnail_eye_fc8b5e3a4a.jpg",
+                      "hash": "thumbnail_eye_fc8b5e3a4a",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_eye.jpg",
+                      "path": null,
+                      "size": 7.89,
+                      "width": 245,
+                      "height": 137,
+                      "provider_metadata": {
+                        "public_id": "thumbnail_eye_fc8b5e3a4a",
+                        "resource_type": "image"
+                      }
+                    }
+                  },
+                  "hash": "eye_fc8b5e3a4a",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "size": 8,
+                  "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670345146/eye_fc8b5e3a4a.jpg",
+                  "previewUrl": null,
+                  "provider": "cloudinary",
+                  "provider_metadata": {
+                    "public_id": "eye_fc8b5e3a4a",
+                    "resource_type": "image"
+                  },
+                  "createdAt": "2022-12-06T16:45:46.907Z",
+                  "updatedAt": "2022-12-06T16:45:46.907Z"
+                }
+              }
+            },
+            "metadata": {
+              "id": 1,
+              "name": "home",
+              "section_id": "home",
+              "background": true
+            }
+          },
+          {
+            "id": 1,
+            "__component": "section.section-content",
+            "title": "O que temos que ter sempre em mente é ...",
+            "content": "A percepção das dificuldades obstaculiza a apreciação da importância da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a estrutura atual da organização acarreta um **processo de reformulação** e modernização das diversas correntes de pensamento. É claro que a mobilidade dos capitais internacionais faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades causa impacto indireto na reavaliação de todos os recursos funcionais envolvidos. _O incentivo ao avanço tecnológico_, assim como o comprometimento entre as equipes afeta positivamente a correta previsão do processo de comunicação como um todo.",
+            "metadata": {
+              "id": 3,
+              "name": "intro",
+              "section_id": "intro",
+              "background": false
+            }
+          },
+          {
+            "id": 1,
+            "__component": "section.section-grid",
+            "title": "My Grid",
+            "description": "Pensando mais a longo prazo, o desenvolvimento contínuo de distintas formas de atuação estimula a padronização das direções preferenciais no sentido do progresso.",
+            "text_grid": [
+              {
+                "id": 1,
+                "title": "Teste 1",
+                "description": "O cuidado em identificar pontos críticos na competitividade nas transações comerciais facilita a criação do sistema de formação de quadros que corresponde às necessidades."
+              },
+              {
+                "id": 2,
+                "title": "Teste 2",
+                "description": "Do mesmo modo, o comprometimento entre as equipes garante a contribuição de um grupo importante na determinação do remanejamento dos quadros funcionais."
+              },
+              {
+                "id": 3,
+                "title": "Teste 3",
+                "description": " Todavia, a hegemonia do ambiente político maximiza as possibilidades por conta do retorno esperado a longo prazo."
+              }
+            ],
+            "image_grid": [],
+            "metadata": {
+              "id": 2,
+              "name": "grid-one",
+              "section_id": "grid-on",
+              "background": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "Eita nóiz",
+        "slug": "eita-noiz",
+        "createdAt": "2022-12-06T17:28:04.885Z",
+        "updatedAt": "2022-12-06T17:28:21.092Z",
+        "publishedAt": "2022-12-06T17:28:20.791Z",
+        "footer_text": "Feito por ** _Samuel Carvalho _**",
+        "menu": {
+          "id": 2,
+          "logo_link": "#home",
+          "logo_text": "company-logo",
+          "logo": {
+            "data": {
+              "id": 9,
+              "attributes": {
+                "name": "company.png",
+                "alternativeText": null,
+                "caption": null,
+                "width": 400,
+                "height": 400,
+                "formats": {
+                  "thumbnail": {
+                    "ext": ".png",
+                    "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670346915/thumbnail_company_0c1368cb03.png",
+                    "hash": "thumbnail_company_0c1368cb03",
+                    "mime": "image/png",
+                    "name": "thumbnail_company.png",
+                    "path": null,
+                    "size": 6.91,
+                    "width": 156,
+                    "height": 156,
+                    "provider_metadata": {
+                      "public_id": "thumbnail_company_0c1368cb03",
+                      "resource_type": "image"
+                    }
+                  }
+                },
+                "hash": "company_0c1368cb03",
+                "ext": ".png",
+                "mime": "image/png",
+                "size": 4.9,
+                "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670346915/company_0c1368cb03.png",
+                "previewUrl": null,
+                "provider": "cloudinary",
+                "provider_metadata": {
+                  "public_id": "company_0c1368cb03",
+                  "resource_type": "image"
+                },
+                "createdAt": "2022-12-06T17:15:16.168Z",
+                "updatedAt": "2022-12-06T17:15:16.168Z"
+              }
+            }
+          },
+          "menu_links": [
+            {
+              "id": 4,
+              "link_text": "intro",
+              "url": "#intro",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 3,
+              "link_text": "grid-one",
+              "url": "#grid-one",
+              "open_in_new_tab": false
+            }
+          ]
+        },
+        "sections": [
+          {
+            "id": 2,
+            "__component": "section.section-two-columns",
+            "title": "Estratégias em um Novo Paradigma Globalizado",
+            "description": "Assim mesmo, a expansão dos mercados mundiais estende o alcance e a importância do impacto na agilidade decisória.",
+            "image": {
+              "data": {
+                "id": 2,
+                "attributes": {
+                  "name": "eye.jpg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 300,
+                  "height": 168,
+                  "formats": {
+                    "thumbnail": {
+                      "ext": ".jpg",
+                      "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670345146/thumbnail_eye_fc8b5e3a4a.jpg",
+                      "hash": "thumbnail_eye_fc8b5e3a4a",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_eye.jpg",
+                      "path": null,
+                      "size": 7.89,
+                      "width": 245,
+                      "height": 137,
+                      "provider_metadata": {
+                        "public_id": "thumbnail_eye_fc8b5e3a4a",
+                        "resource_type": "image"
+                      }
+                    }
+                  },
+                  "hash": "eye_fc8b5e3a4a",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "size": 8,
+                  "url": "https://res.cloudinary.com/dw08nx3ad/image/upload/v1670345146/eye_fc8b5e3a4a.jpg",
+                  "previewUrl": null,
+                  "provider": "cloudinary",
+                  "provider_metadata": {
+                    "public_id": "eye_fc8b5e3a4a",
+                    "resource_type": "image"
+                  },
+                  "createdAt": "2022-12-06T16:45:46.907Z",
+                  "updatedAt": "2022-12-06T16:45:46.907Z"
+                }
+              }
+            },
+            "metadata": {
+              "id": 5,
+              "name": "home",
+              "section_id": "home",
+              "background": true
+            }
+          },
+          {
+            "id": 2,
+            "__component": "section.section-content",
+            "title": "O que temos que ter sempre em mente é ...",
+            "content": "A percepção das dificuldades obstaculiza a apreciação da importância da gestão inovadora da qual fazemos parte. A certificação de metodologias que nos auxiliam a lidar com a estrutura atual da organização acarreta um **processo de reformulação** e modernização das diversas correntes de pensamento. É claro que a mobilidade dos capitais internacionais faz parte de um processo de gerenciamento do levantamento das variáveis envolvidas. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o julgamento imparcial das eventualidades causa impacto indireto na reavaliação de todos os recursos funcionais envolvidos. _O incentivo ao avanço tecnológico_, assim como o comprometimento entre as equipes afeta positivamente a correta previsão do processo de comunicação como um todo.",
+            "metadata": {
+              "id": 4,
+              "name": "intro",
+              "section_id": "intro",
+              "background": false
+            }
+          },
+          {
+            "id": 2,
+            "__component": "section.section-grid",
+            "title": "My Grid",
+            "description": "Pensando mais a longo prazo, o desenvolvimento contínuo de distintas formas de atuação estimula a padronização das direções preferenciais no sentido do progresso.",
+            "text_grid": [
+              {
+                "id": 6,
+                "title": "Teste 1",
+                "description": "O cuidado em identificar pontos críticos na competitividade nas transações comerciais facilita a criação do sistema de formação de quadros que corresponde às necessidades."
+              },
+              {
+                "id": 5,
+                "title": "Teste 2",
+                "description": "Do mesmo modo, o comprometimento entre as equipes garante a contribuição de um grupo importante na determinação do remanejamento dos quadros funcionais."
+              },
+              {
+                "id": 4,
+                "title": "Teste 3",
+                "description": " Todavia, a hegemonia do ambiente político maximiza as possibilidades por conta do retorno esperado a longo prazo."
+              }
+            ],
+            "image_grid": [],
+            "metadata": {
+              "id": 6,
+              "name": "grid-one",
+              "section_id": "grid-on",
+              "background": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 2
+    }
+  }
+}
